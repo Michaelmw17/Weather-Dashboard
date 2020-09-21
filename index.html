@@ -61,67 +61,45 @@
           </head>
         
           <body>
-            <div class="container-fluid text-center text-light bg-dark">
-              <h1>Weather Dashboard</h1>
+            
+    <div class="container-fluid text-center text-light bg-dark">
+        <h1>Weather Dashboard</h1>
+    </div>
+        <div class="container">
+    <div class="clearfix">
+            <div class="col-4 float-left">
+                <nav class="navbar navbar-light bg-light">
+                    <h4>Search for a City:</h4>
+                    <form class="form-inline">
+                        <input id="city-input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button id="select-city" class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <div class="col-2">
+                    <form>
+                       <p id="history" class="text-muted border"></p>
+                    </form>
+                </div>
+                </nav>
             </div>
-            <div class="container">
-                <div class="clearfix">
-                        <div class="col-4 float-left">
-                            <nav class="navbar navbar-light bg-light">
-                                <h4>Search for a City:</h4>
-                                <form class="form-inline">
-                                    <input id="city-input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                    <button id="select-city" class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
-                                </form>
-                                <div class="col-2">
-                                <form>
-                                   <p id="history" class="text-muted border"></p>
-                                </form>
-                            </div>
-                            </nav>
-                        </div>
-                            <div class="col-8 float-right">
-                                <div id="current" class="card bg-light text-dark p-2 rem" style="width: 710; height: 12rem;">
-                    <!----------------------  Current weather goes here  ------------------------------------>
-                                </div>
-                            <br>
-                            <h2>5-Day Forcast:</h2>
-                              <div class="row">
-                                <div id="5day" class="card text-white bg-primary mx-auto" style="width: 8.5rem; height: 11rem;">
-                                        <h5 class="card-title">Date</h5>
-                                    <div class="card-body">
-                                        <p class="card-text">Temp<p>Humidity</p>
-                                    </div>
-                                </div>
-                                <div class="card text-white bg-primary mx-auto" style="width: 8.5rem; height: 11rem;">
-                                        <h5 class="card-title">Date</h5>
-                                    <div class="card-body">
-                               <p class="card-text">Temp<p>Humidity</p>
-                                    </div>
-                                </div>
-                                <div class="card text-white bg-primary mx-auto" style="width: 8.5rem; height: 11rem;">
-                                        <h5 class="card-title">Date</h5>
-                                    <div class="card-body">
-                                        <p class="card-text">Temp<p>Humidity</p>
-                                    </div>
-                                </div>
-                                <div class="card text-white bg-primary mx-auto" style="width: 8.5rem; height: 11rem;">
-                                        <h5 class="card-title">Date</h5>
-                                    <div class="card-body">
-                                        <p class="card-text">Temp<p>Humidity</p>
-                                    </div>
-                                </div>
-                                <div class="card text-white bg-primary mx-auto" style="width: 8.5rem; height: 11rem;">
-                                        <h5 class="card-title">Date</h5>
-                                    <div class="card-body">
-                                        <p class="card-text">Temp<p>Humidity</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-8 float-right">
+                    <div id="current" class="card bg-light text-dark p-2 rem" style="width: 710; height: 12rem;">
+        <!----------------------  Current weather goes here  ------------------------------------>
                     </div>
-              </div>
-             
+                <br>
+                <h2>5-Day Forcast:</h2>
+                  <div  id="5day" class="row">
+                    <!-- <div class="card text-white bg-primary mx-auto" style="width: 8.5rem; height: 11rem;">
+                            <h5 class="card-title">Date</h5>
+                        <div class="card-body">
+                            <p class="card-text">Temp<p>Humidity</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+ 
+
         <!--js starts here-->
         <script
           src="https://code.jquery.com/jquery-3.5.1.min.js"
