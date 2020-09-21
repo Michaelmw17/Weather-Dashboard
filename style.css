@@ -1,13 +1,46 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 header {
-  font-size: 50px;
-  padding: 0.06%;
-  text-align: center;
-  color: white;
-  background-color: rgb(0, 115, 247);
+    padding: 0.5%;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(5, 5, 5);
+};
+
+#searchBtn {
+    border-radius: 20%;
+    background-color: rgb(1, 1, 236);
+    color: #fff;
+};
+.favorable {
+    border-radius: 10px;
+    padding: 5%;
+    background-color: rgb(2, 138, 2);
+    color: #fff;
 }
+.severe {
+    border-radius: 10px;
+    padding: 5%;
+    background-color: rgb(240, 0, 0);
+    color: #fff;
+};
+  
+.moderate {
+    border-radius: 10px;
+    padding: 5%;
+    background-color: rgb(231, 150, 0);
+    color: #fff;
+}
+  
+.card {
+    
+}
+  
+/* .fas {
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+}; */
+
+main {
+    margin: 20%;
+    padding: 20%;
+};
