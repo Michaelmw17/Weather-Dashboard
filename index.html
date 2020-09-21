@@ -1,24 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Weather Dashbaord</title>
-  </head>
-
-  <body>
     <!DOCTYPE html>
     <html lang="en">
       <head>
@@ -61,7 +40,7 @@
           </head>
         
           <body>
-            
+         
     <div class="container-fluid text-center text-light bg-dark">
         <h1>Weather Dashboard</h1>
     </div>
@@ -74,16 +53,14 @@
                         <input id="city-input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                         <button id="select-city" class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
                     </form>
-                    <div class="col-2">
-                    <form>
-                       <p id="history" class="text-muted border"></p>
+                    <form id="searchhistory">
+                    
                     </form>
-                </div>
                 </nav>
             </div>
                 <div class="col-8 float-right">
                     <div id="current" class="card bg-light text-dark p-2 rem" style="width: 710; height: 12rem;">
-        <!----------------------  Current weather goes here  ------------------------------------>
+        <!-- Current weather goes here -->
                     </div>
                 <br>
                 <h2>5-Day Forcast:</h2>
@@ -98,6 +75,8 @@
             </div>
         </div>
   </div>
+ 
+
  
 
         <!--js starts here-->
