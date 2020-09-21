@@ -5,11 +5,11 @@ function searchCity(cityname) {
   var queryURL =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
     cityname +
-    "&units=imperial&appid=79665c3a613bbe39f50d60745b2798c6";
+    "&units=metric&appid=79665c3a613bbe39f50d60745b2798c6";
   var queryURLforcast =
     "https://api.openweathermap.org/data/2.5/forecast?q=" +
     cityname +
-    "&units=imperial&appid=79665c3a613bbe39f50d60745b2798c6";
+    "&units=metric&appid=79665c3a613bbe39f50d60745b2798c6";
 
   $.ajax({
     url: queryURL,
@@ -32,33 +32,33 @@ function searchCity(cityname) {
     if (currentweather === "Rain") {
       var currentIcon = $("<img>").attr(
         "src",
-        "http://openweathermap.org/img/wn/09d.png"
+        "http://openweathermap.org/img/wn/13d.png"
       );
-      currentIcon.attr("style", "height: 60px; width: 60px");
+      currentIcon.attr("style", "height: 50px; width: 50px");
     } else if (currentweather === "Clouds") {
       var currentIcon = $("<img>").attr(
         "src",
         "http://openweathermap.org/img/wn/03d.png"
       );
-      currentIcon.attr("style", "height: 60px; width: 60px");
+      currentIcon.attr("style", "height: 50px; width: 50px");
     } else if (currentweather === "Clear") {
       var currentIcon = $("<img>").attr(
         "src",
         "http://openweathermap.org/img/wn/01d.png"
       );
-      currentIcon.attr("style", "height: 60px; width: 60px");
+      currentIcon.attr("style", "height: 50px; width: 50px");
     } else if (currentweather === "Drizzle") {
       var currentIcon = $("<img>").attr(
         "src",
         "http://openweathermap.org/img/wn/10d.png"
       );
-      currentIcon.attr("style", "height: 60px; width: 60px");
+      currentIcon.attr("style", "height: 50px; width: 50px");
     } else if (currentweather === "Snow") {
       var currentIcon = $("<img>").attr(
         "src",
-        "http://openweathermap.org/img/wn/13d.png"
+        "http://openweathermap.org/img/wn/09d.png"
       );
-      currentIcon.attr("style", "height: 60px; width: 60px");
+      currentIcon.attr("style", "height: 50px; width: 50px");
     }
     //create HTML div to append new elements to render on page....
     var newDiv = $("<div>");
@@ -72,7 +72,7 @@ function searchCity(cityname) {
     var lat = response.coord.lat;
     var lon = response.coord.lon;
     var queryURLUV =
-      "https://api.openweathermap.org/data/2.5/uvi?&appid=ecc0be5fd92206da3aa90cc41c13ca56&lat=" +
+      "https://api.openweathermap.org/data/2.5/uvi?&appid=79665c3a613bbe39f50d60745b2798c6&lat=" +
       lat +
       "&lon=" +
       lon;
