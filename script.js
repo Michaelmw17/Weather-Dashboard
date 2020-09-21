@@ -71,7 +71,7 @@ function searchCity(cityname) {
 
     var lat = response.coord.lat;
     var lon = response.coord.lon;
-    var queryURLUV =
+    var queryURLUv =
       "https://api.openweathermap.org/data/2.5/uvi?&appid=79665c3a613bbe39f50d60745b2798c6&lat=" +
       lat +
       "&lon=" +
