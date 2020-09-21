@@ -1,115 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"/>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Weather Dashbaord</title>
   </head>
+
   <body>
-    <header class="header">
-        <span id="headerText">
-          Weather Dashboard
-        </span>
-    </header>
-    <div class="container">
-        <div class="row">
-            <!--Search for a city section-->
-            <section id="search">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-header">
-                    Search For A City:
-                    <input id="userInput">
-                        <button id="searchBtn"><i class="fas fa-search"></i></button>  
-                    </div>
-                    <ul id="cityList" class="list-group list-group-flush" style="list-style-type: none; padding-left: 10%;"></ul>
-                </div> 
-            </section>
-            <!--- Main Current City Display -->
-            <main id="currentCity">
-                <div class="col-md-12">
-                    <h1><span id="currentCityName"></span></h1>
-                        <p>Temperature: <span id="currentCityTemp"></span></p>
-                        <p>Humidity: <span id="currentCityHumid"></span></p>
-                        <p>Wind Speed: <span id="currentCityWind"></span></p>
-                        <p>UV Index: <span id="currentCityUV"></span></p>
-                </div>
-            </main>
-        </div>   
-    </div> 
-    <!---5 Day Forecast container-->
-    <div class="container">
-        <section class="row" id="fiveDay">
-            <div class="card text-white bg-primary mb 3" style="max-width: 10rem;">
-                <div class="card-body">
-                    <h4 class="card-title" id="date1"></h4>
-                    <img id="icon1"/>
-                <br>
-                <p class="card-text">Temp: <span id="temp1"></span></p>
-                <p>Humidity: <span id="humid1"></span></p>
-                </div>
-            </div>  
-            <div class="card text-white bg-primary mb 3" style="max-width: 10rem;">
-                <div class="card-body">
-                    <h4 class="card-title" id="date2"></h4>
-                    <img id="icon2"/>
-                <br>
-                <p class="card-text">Temp: <span id="temp2"></span></p>
-                <p>Humidity: <span id="humid2"></span></p>
-                </div>
-            </div>
-            <div class="card text-white bg-primary mb 3" style="max-width: 10rem;">
-                <div class="card-body">
-                    <h4 class="card-title" id="date3"></h4>
-                    <img id="icon3"/>
-                <br>
-                <p class="card-text">Temp: <span id="temp3"></span</p>
-                <p>Humidity: <span id="humid3"></span</p>
-                </div>
-            </div>
-            <div class="card text-white bg-primary mb 3" style="max-width: 10rem;">
-                <div class="card-body">
-                    <h4 class="card-title" id="date4"></h4>
-                    <img id="icon4"/>
-                <br>
-                <p class="card-text">Temp: <span id="temp4"></span</p>
-                <p>Humidity: <span id="humid4"></span</p>
-                </div>
-            </div>
-            <div class="card text-white bg-primary mb 3" style="max-width: 10rem;">
-                <div class="card-body">
-                    <h4 class="card-title" id="date5"></h4>
-                    <img id="icon5"/>
-                <br>
-                <p class="card-text">Temp: <span id="temp5"></span</p>
-                <p>Humidity: <span id="humid5"></span</p>
-                </div>
-            </div> 
-        </section> 
+    <div class="container-fluid text-center text-light bg-dark">
+      <h1>Weather Dashboard</h1>
     </div>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
-    <!-- jQuery JS -->
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="col-8">
+            <div class="row">
+              <div class="card bg-light text-dark">
+                <h2 class="card-title">Place Holder</h2>
+                <p id="temp" class="card-text">Place Hoolder</p>
+                <p id="hum" class="card-text">Place Holder</p>
+                <p id="wind" class="card-text">Place Holder</p>
+                <p id="UV" class="card-text">Place Holder</p>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="card text-white bg-primary mb-3"
+                style="max-width: 8rem; max-height: 11rem"
+              >
+                <h5 class="card-title">Primary card title</h5>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--js starts here-->
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
-   
-
-    <!-- Code to the JavaScript File -->
-    <script src="script.js"></script>
-    <!-- -->
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="https://use.fontawesome.com/888b2d11be.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js">
+    <!--  -->
   </body>
 </html>
