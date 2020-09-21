@@ -81,14 +81,14 @@ function searchCity(cityname) {
       url: queryURLUV,
       method: "GET",
     }).then(function (response) {
-      $("#uvl-display").empty();
+      $("#uv-display").empty();
       var uvlresults = response.value;
       //create HTML for new div
       var uvlEl = $("<button class='btn bg-success'>").text(
         "UV Index: " + response.value
       );
 
-      $("#uvl-display").html(uvlEl);
+      $("#uv-display").html(uvlEl);
     });
   });
 
@@ -167,12 +167,12 @@ pageLoad();
 //Event handler for user city search//
 
 $("#select-city").on("click", function (event) {
-  // Preventing the button from trying to submit the form......
+  // Preventing the button from trying to submit the form.
   event.preventDefault();
-  // Storing the city name........
+  // Storing the city name.
   var cityInput = $("#city-input").val().trim();
 
-  //save search term to local storage.....
+  //save search term to local storage..
   var textContent = $(this).siblings("input").val();
   var storearr = [];
   storearr.push(textContent);
