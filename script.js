@@ -100,8 +100,10 @@ $("#select-city").on("click", function (event) {
 //---------------------------Call stored items on page load-------------------------------------//
 function pageLoad() {
   var lastSearch = JSON.parse(localStorage.getItem("cityName"));
-  var searchDiv = $("<div>");
-  var psearch = $("<p class='text-muted border'>").text(lastSearch);
+  var searchDiv = $(
+    "<div class='card border text-muted' style='width: 12rem;'>"
+  );
+  var psearch = $("<div class='text-muted p-1 ml-1'>").text(lastSearch);
   searchDiv.append(psearch);
   $("#searchhistory").prepend(searchDiv);
 }
