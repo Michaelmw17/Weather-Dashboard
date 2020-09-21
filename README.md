@@ -76,3 +76,7 @@ michaelmw17@outlook.com
   - https://api.jquery.com/show/
   - https://api.jquery.com/hide/
   
+  - Resources
+
+    - https://stackoverflow.com/questions/48172889/adding-moment-js-cdn-link-in-html
+    -
