@@ -24,36 +24,36 @@ function searchCity(cityname) {
     //create HTML for city information......
     var cityNameEl = $("<h2>").text(response.name);
     var displayMainDate = cityNameEl.append(" " + mainDate);
-    var tempEL = $("<p>").text("Tempraturer: " + response.main.temp);
+    var tempEL = $("<p>").text("Temperature: " + response.main.temp);
     var humEl = $("<p>").text("Humidity: " + response.main.humidity);
     var windEl = $("<p>").text("Wind Speed: " + response.wind.speed);
-    var currentweather = response.weather[0].main;
+    var currentWeather = response.weather[0].main;
 
-    if (currentweather === "Rain") {
+    if (currentWeather === "Snow") {
       var currentIcon = $("<img>").attr(
         "src",
         "http://openweathermap.org/img/wn/13d.png"
       );
       currentIcon.attr("style", "height: 50px; width: 50px");
-    } else if (currentweather === "Clouds") {
+    } else if (currentWeather === "Clouds") {
       var currentIcon = $("<img>").attr(
         "src",
         "http://openweathermap.org/img/wn/03d.png"
       );
       currentIcon.attr("style", "height: 50px; width: 50px");
-    } else if (currentweather === "Clear") {
+    } else if (currentWeather === "Clear") {
       var currentIcon = $("<img>").attr(
         "src",
         "http://openweathermap.org/img/wn/01d.png"
       );
       currentIcon.attr("style", "height: 50px; width: 50px");
-    } else if (currentweather === "Drizzle") {
+    } else if (currentWeather === "Drizzle") {
       var currentIcon = $("<img>").attr(
         "src",
         "http://openweathermap.org/img/wn/10d.png"
       );
       currentIcon.attr("style", "height: 50px; width: 50px");
-    } else if (currentweather === "Snow") {
+    } else if (currentWeather === "Rain") {
       var currentIcon = $("<img>").attr(
         "src",
         "http://openweathermap.org/img/wn/09d.png"
@@ -78,17 +78,17 @@ function searchCity(cityname) {
       lon;
 
     $.ajax({
-      url: queryURLUV,
+      url: queryURLUv,
       method: "GET",
     }).then(function (response) {
-      $("#uv-display").empty();
+      $("#uvl-display").empty();
       var uvlresults = response.value;
       //create HTML for new div
       var uvlEl = $("<button class='btn bg-success'>").text(
         "UV Index: " + response.value
       );
 
-      $("#uv-display").html(uvlEl);
+      $("#uvl-display").html(uvlEl);
     });
   });
 
@@ -186,15 +186,15 @@ $("#select-city").on("click", function (event) {
 function pageLoad() {
   var lastSearch = JSON.parse(localStorage.getItem("cityName"));
   var searchDiv = $(
-    "<button class='btn border text-muted mt-1 shadow-sm bg-white rounded' style='width: 12rem;'>"
+    "<button class='btn border shadow-sm bg-white rounded' style='width: 11rem;'>"
   ).text(lastSearch);
   var psearch = $("<div>");
   psearch.append(searchDiv);
-  $("#searchhistory").prepend(psearch);
+  $("#searchHistory").prepend(psearch);
 }
 
 //Event deligation.
-$("#searchhistory").on("click", ".btn", function (event) {
+$("#searchHistory").on("click", ".btn", function (event) {
   event.preventDefault();
   console.log($(this).text());
   searchCity($(this).text());
