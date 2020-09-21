@@ -51,15 +51,13 @@ Displayed the current climate conditions:
 
 #### Final Interface
 
--
-
 ### Licence
 
 https://github.com/Michaelmw17/w6homework/blob/master/LICENSE
 
 ### Link to the App
 
-<a href=".">https://michaelmw17.github.io/w6homework/</a><hr>
+<a href=".">https://michaelmw17.github.io/w6homework/</a>
 
 <hr>
 
