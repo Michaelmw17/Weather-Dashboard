@@ -2,23 +2,9 @@ main {
   margin: 20%;
   padding: 20%;
 }
+body {
+  font-family: "Rubik", sans-serif;
+}
 #uvl-display {
-  background-size: auto;
-}
-
-
-@media (min-width: 576px) {
-}
-
-
-@media (min-width: 768px) {
-}
-
-
-@media (min-width: 992px) {
-}
-
-
-@media (min-width: 1200px) {
-  
+  border-radius: 20px;
 }

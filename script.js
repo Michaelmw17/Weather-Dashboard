@@ -84,9 +84,9 @@ function searchCity(cityname) {
       $("#uvl-display").empty();
       var uvlresults = response.value;
       //Create HTML for new div.
-      var uvlEl = $("<button class='btn bg-warning'>").text(
-        "UV Index: " + response.value
-      );
+      var uvlEl = $(
+        "<button class='btn bg-warning' style='border-radius: 20px;'>"
+      ).text("UV Index: " + response.value);
 
       $("#uvl-display").html(uvlEl);
     });
@@ -106,7 +106,7 @@ function searchCity(cityname) {
     for (var i = 0; i < results.length; i += 8) {
       // Creating a div
       var fiveDayDiv = $(
-        "<div class='card shadow-lg text-white bg-primary mx-auto mb-9 p-1' style='width: 8.5rem;  height: 11rem;'>"
+        "<div class='card shadow-lg text-white bg-primary mx-auto mb-9 p-1' style='width: 8.5rem;  height: 10rem; padding: 20px;'>"
       );
 
       // Storing the responses date temp and humidity.
