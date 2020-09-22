@@ -2,6 +2,9 @@ main {
   margin: 20%;
   padding: 20%;
 }
+#uvl-display {
+  background-size: auto;
+}
 
 
 @media (min-width: 576px) {

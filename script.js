@@ -84,7 +84,7 @@ function searchCity(cityname) {
       $("#uvl-display").empty();
       var uvlresults = response.value;
       //Create HTML for new div.
-      var uvlEl = $("<button class='btn bg-success'>").text(
+      var uvlEl = $("<button class='btn bg-warning'>").text(
         "UV Index: " + response.value
       );
 
@@ -106,7 +106,7 @@ function searchCity(cityname) {
     for (var i = 0; i < results.length; i += 8) {
       // Creating a div
       var fiveDayDiv = $(
-        "<div class='card shadow-lg text-white bg-primary mx-auto mb-10 p-2' style='width: 8.5rem; height: 11rem;'>"
+        "<div class='card shadow-lg text-white bg-primary mx-auto mb-9 p-1' style='width: 8.5rem;  height: 11rem;'>"
       );
 
       // Storing the responses date temp and humidity.
@@ -117,7 +117,7 @@ function searchCity(cityname) {
 
       // Creating tags with the result items information.
       var h5date = $("<h5 class='card-title'>").text(setD);
-      var pHum = $("<p class='card-text'>").text("Humidity " + hum);
+      var pHum = $("<p class='card-text'>").text("Humidity: " + hum);
       var pTemp = $("<p class='card-text'>").text("Temp: " + temp);
 
       var weather = results[i].weather[0].main;
