@@ -117,8 +117,8 @@ function searchCity(cityname) {
 
       // Creating tags with the result items information.
       var h5date = $("<h5 class='card-title'>").text(setD);
-      var pTemp = $("<p class='card-text'>").text("Temp: " + temp);
       var pHum = $("<p class='card-text'>").text("Humidity " + hum);
+      var pTemp = $("<p class='card-text'>").text("Temp: " + temp);
 
       var weather = results[i].weather[0].main;
 
@@ -156,8 +156,8 @@ function searchCity(cityname) {
 
       // Append items to.
       fiveDayDiv.append(h5date);
-      fiveDayDiv.append(icon);
       fiveDayDiv.append(pTemp);
+      fiveDayDiv.append(icon);
       fiveDayDiv.append(pHum);
       $("#5day").append(fiveDayDiv);
     }
@@ -182,11 +182,11 @@ $("#select-city").on("click", function (event) {
   pageLoad();
 });
 
-//Call stored items on page load
+// Call stored items on page load
 function pageLoad() {
   var lastSearch = JSON.parse(localStorage.getItem("cityName"));
   var searchDiv = $(
-    "<button class='btn border shadow-sm bg-white rounded' style='width: 11rem;'>"
+    "<button id='searchBtn' class='btn border shadow-sm bg-white rounded' style='width: 7rem;'>"
   ).text(lastSearch);
   var psearch = $("<div>");
   psearch.append(searchDiv);

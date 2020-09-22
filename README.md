@@ -103,6 +103,7 @@ https://github.com/Michaelmw17/w6homework/blob/master/LICENSE
   - https://openweathermap.org/triggers-struct#conditions
   - https://openweathermap.org/current
   - https://openweathermap.org/forecast5
+  - http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/jquerymobile/event_pageload.asp.html
 
 ## Authors
 
