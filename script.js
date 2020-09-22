@@ -186,7 +186,7 @@ $("#select-city").on("click", function (event) {
 function pageLoad() {
   var lastSearch = JSON.parse(localStorage.getItem("cityName"));
   var searchDiv = $(
-    "<button id='searchBtn' class='btn border shadow-sm bg-white rounded' style='width: 7rem;'>"
+    "<button id='searchBtn' class='btn border shadow-sm bg-primary text-white rounded' style='width: 7rem;'>"
   ).text(lastSearch);
   var psearch = $("<div>");
   psearch.append(searchDiv);
