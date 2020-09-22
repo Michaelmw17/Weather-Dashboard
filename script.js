@@ -1,14 +1,14 @@
 moment().format("L");
 
 // Search Function for Current City Weather
-function searchCity(cityname) {
+function searchCity(cityName) {
   var queryURL =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
-    cityname +
+    cityName +
     "&units=metric&appid=79665c3a613bbe39f50d60745b2798c6";
-  var queryURLforcast =
+  var queryURLForecast =
     "https://api.openweathermap.org/data/2.5/forecast?q=" +
-    cityname +
+    cityName +
     "&units=metric&appid=79665c3a613bbe39f50d60745b2798c6";
 
   $.ajax({
@@ -82,7 +82,7 @@ function searchCity(cityname) {
       method: "GET",
     }).then(function (response) {
       $("#uvl-display").empty();
-      var uvlresults = response.value;
+      var uvlResults = response.value;
       //Create HTML for new div.
       var uvlEl = $(
         "<button class='btn bg-warning' style='border-radius: 20px;'>"
@@ -95,7 +95,7 @@ function searchCity(cityname) {
   // 5 Day forecast call.
 
   $.ajax({
-    url: queryURLforcast,
+    url: queryURLForecast,
     method: "GET",
   }).then(function (response) {
     // Storing an array of results in the results variable.
@@ -174,9 +174,9 @@ $("#select-city").on("click", function (event) {
 
   // Save search term to local storage.
   var textContent = $(this).siblings("input").val();
-  var storearr = [];
-  storearr.push(textContent);
-  localStorage.setItem("cityName", JSON.stringify(storearr));
+  var storeArr = [];
+  storeArr.push(textContent);
+  localStorage.setItem("cityName", JSON.stringify(storeArr));
 
   searchCity(cityInput);
   pageLoad();
