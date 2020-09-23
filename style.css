@@ -8,3 +8,11 @@ body {
 #uvl-display {
   border-radius: 20px;
 }
+#select-city:hover,
+#searchBtn:hover {
+  background: rgba(255, 212, 156, 0.438);
+  color: black;
+}
+.bg-color-container {
+  background-color: red;
+}

@@ -34,31 +34,31 @@ function searchCity(cityName) {
         "src",
         "http://openweathermap.org/img/wn/13d.png"
       );
-      currentIcon.attr("style", "height: 50px; width: 50px");
+      currentIcon.attr("style", "height: 90px; width: 90px");
     } else if (currentWeather === "Clouds") {
       var currentIcon = $("<img>").attr(
         "src",
         "http://openweathermap.org/img/wn/03d.png"
       );
-      currentIcon.attr("style", "height: 50px; width: 50px");
+      currentIcon.attr("style", "height: 90px; width: 90px");
     } else if (currentWeather === "Clear") {
       var currentIcon = $("<img>").attr(
         "src",
         "http://openweathermap.org/img/wn/01d.png"
       );
-      currentIcon.attr("style", "height: 50px; width: 50px");
+      currentIcon.attr("style", "height: 90px; width: 90px");
     } else if (currentWeather === "Drizzle") {
       var currentIcon = $("<img>").attr(
         "src",
         "http://openweathermap.org/img/wn/10d.png"
       );
-      currentIcon.attr("style", "height: 50px; width: 50px");
+      currentIcon.attr("style", "height: 90px; width: 90px");
     } else if (currentWeather === "Rain") {
       var currentIcon = $("<img>").attr(
         "src",
         "http://openweathermap.org/img/wn/09d.png"
       );
-      currentIcon.attr("style", "height: 50px; width: 50px");
+      currentIcon.attr("style", "height: 90px; width: 90px");
     }
     // Create HTML div to append new elements to render on page.
     var newDiv = $("<div>");
@@ -127,31 +127,31 @@ function searchCity(cityName) {
           "src",
           "http://openweathermap.org/img/wn/09d.png"
         );
-        icon.attr("style", "height: 40px; width: 40px");
+        icon.attr("style", "height: 60px; width: 40px");
       } else if (weather === "Clouds") {
         var icon = $("<img>").attr(
           "src",
           "http://openweathermap.org/img/wn/03d.png"
         );
-        icon.attr("style", "height: 40px; width: 40px");
+        icon.attr("style", "height: 60px; width: 60px");
       } else if (weather === "Clear") {
         var icon = $("<img>").attr(
           "src",
           "http://openweathermap.org/img/wn/01d.png"
         );
-        icon.attr("style", "height: 40px; width: 40px");
+        icon.attr("style", "height: 60px; width: 60px");
       } else if (weather === "Drizzle") {
         var icon = $("<img>").attr(
           "src",
           "http://openweathermap.org/img/wn/10d.png"
         );
-        icon.attr("style", "height: 40px; width: 40px");
+        icon.attr("style", "height: 60px; width: 60px");
       } else if (weather === "Snow") {
         var icon = $("<img>").attr(
           "src",
           "http://openweathermap.org/img/wn/13d.png"
         );
-        icon.attr("style", "height: 40px; width: 40px");
+        icon.attr("style", "height: 60px; width: 60px");
       }
 
       // Append items to.
