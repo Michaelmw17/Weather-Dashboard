@@ -1,12 +1,5 @@
-# TITLE
+# Weather Dashboard
 
-<h1>
-Weather Dashboard
-</h1>
-
-## Contents
-
-<p>
 The app is composed of 3 pages, index.html, javascript.js and style.css. Also has a README, License and images in the img/assets folder.
 This application uses the AJAX with OpenWeather API to recover information in the JSON. HTML and CSS driven by jQuery we can show the user the following data: 
 Displayed the current climate conditions:
@@ -16,11 +9,9 @@ Displayed the current climate conditions:
 - Wind speed
 - Temperature
 - Icon image
-</p>
 
 ## User Story
 
-<p>
     As a type of user, Weather DashBoard functions on the search click, data stored with local storage.
     Includes a history with a goal that user can get to their past searched terms by tapping on the city name, it will play out another request that displays current and future conditions for city searched.
 
@@ -30,8 +21,6 @@ Displayed the current climate conditions:
     - javascript - Used to dynamically change html and store user-input
     - Git - Version control system to track changes to source code
     - GitHub - Hosts repository that can be deployed to GitHub Pages
-
-</p>
 
 ## Built With
 
@@ -57,7 +46,7 @@ https://github.com/Michaelmw17/w6homework/blob/master/LICENSE
 
 ### Link to the App
 
-<a href=".">https://michaelmw17.github.io/w6homework/</a>
+<a href="https://michaelmw17.github.io/w6homework/">Link to Work Day Scheduler</a>
 
 <hr>
 
