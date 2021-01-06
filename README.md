@@ -42,7 +42,7 @@ Displayed the current climate conditions:
 
 ### Licence
 
-https://github.com/Michaelmw17/w6homework/blob/master/LICENSE
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
 ### Link to the App
 
