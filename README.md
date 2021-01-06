@@ -46,7 +46,7 @@ https://github.com/Michaelmw17/w6homework/blob/master/LICENSE
 
 ### Link to the App
 
-<a href="https://michaelmw17.github.io/w6homework/">Link to Work Day Scheduler</a>
+<a href="https://michaelmw17.github.io/Weather-Dashboard/">Link to Weather Dashboard</a>
 
 <hr>
 
